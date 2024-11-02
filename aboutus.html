@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About Us - Tech Innovators Inc.</title>
+    <style>
+        /* Color Palette */
+        :root {
+            --primary-dark: #6f1d1b; /* Deep Red */
+            --accent: #bb9457; /* Warm Tan */
+            --background: #432818; /* Dark Brown */
+            --secondary: #99582a; /* Copper */
+            --light: #ffe6a7; /* Soft Cream */
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--light);
+            color: var(--background);
+            margin: 0;
+        }
+
+        header {
+            background-color: var(--primary-dark);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        header img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--light);
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: var(--accent);
+        }
+
+        #about {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center; /* Center vertically */
+            justify-content: center; /* Center content */
+            max-width: 900px; /* Increase max width */
+            margin: 0 auto;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .about-text {
+            flex: 1; /* Take available space */
+            text-align: left; /* Align text to the left */
+            margin-right: 30px; /* Increase space between text and image */
+        }
+
+        .about-image {
+            flex: 0 0 250px; /* Fixed width for the image */
+        }
+
+        .about-image img {
+            max-width: 250px; /* Make the image responsive */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 15px;
+        }
+
+        .mission, .vision {
+            background-color: var(--accent); /* Warm Tan */
+            color: #fff;
+            padding: 15px; /* Reduce padding */
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        h2 {
+            font-size: 2em; /* Larger header size */
+        }
+
+        h3 {
+            font-size: 1.5em; /* Medium header size */
+            color: var(--primary-dark); /* Dark Red for subheadings */
+        }
+
+        p {
+            font-size: 1em; /* Standard paragraph size */
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column; /* Stack on smaller screens */
+                text-align: center; /* Center text on small screens */
+            }
+
+            .about-text {
+                margin-right: 0; /* Remove right margin */
+                margin-bottom: 10px; /* Add bottom margin */
+            }
+
+            .about-image {
+                margin: 0 auto; /* Center image */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://img.freepik.com/premium-vector/innovation-technology-logo_27153-26.jpg" alt="Tech Innovators Logo" style="max-width: 150px; height: auto;">
+        <nav>
+            <ul>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="ourservice.html">Services</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>At Tech Innovators, we specialize in delivering advanced technology solutions that empower businesses to thrive in the digital age. Our team of experts is dedicated to transforming ideas into reality.</p>
+                <div class="mission">
+                    <h3>Our Mission</h3>
+                    <p>To provide innovative technology solutions that drive efficiency and growth for our clients.</p>
+                </div>
+                <div class="vision">
+                    <h3>Our Vision</h3>
+                    <p>To be a leading technology partner, recognized for our commitment to quality and innovation.</p>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="https://www.searchenginejournal.com/wp-content/uploads/2024/03/7-Brightcove-768x370.png" alt="About Us Image">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tech Innovators Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>

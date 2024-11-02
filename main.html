@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tech Innovators Inc.</title>
+    <style>
+        /* Color Palette */
+        :root {
+            --primary-dark: #6f1d1b; /* Deep Red */
+            --accent: #bb9457; /* Warm Tan */
+            --background: #432818; /* Dark Brown */
+            --secondary: #99582a; /* Copper */
+            --light: #ffe6a7; /* Soft Cream */
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--light);
+            color: var(--background);
+            margin: 0;
+        }
+
+        header {
+            background-color: var(--primary-dark);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        header img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--light);
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: var(--accent);
+        }
+
+        #hero {
+            background-color: var(--background);
+            color: var(--light);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 300px; /* Adjust height as needed */
+            text-align: center; /* Center text */
+            padding: 20px;
+        }
+
+        #hero h1 {
+            font-size: 2.5em;
+            margin: 0 0 15px 0;
+        }
+
+        #hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0;
+        }
+
+        footer {
+            background-color: var(--primary-dark);
+            color: var(--light);
+            text-align: center;
+            padding: 15px 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://img.freepik.com/premium-vector/innovation-technology-logo_27153-26.jpg" alt="Tech Innovators Logo" style="max-width: 150px; height: auto;">
+        <nav>
+            <ul>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="ourservice.html">Services</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <h1>Welcome to Tech Innovators Inc.</h1>
+        <p>Your partner in cutting-edge technology solutions.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Tech Innovators Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Our Services - Tech Innovators Inc.</title>
+    <style>
+        /* Color Palette */
+        :root {
+            --primary-dark: #6f1d1b; /* Deep Red */
+            --accent: #bb9457; /* Warm Tan */
+            --background: #432818; /* Dark Brown */
+            --secondary: #99582a; /* Copper */
+            --light: #ffe6a7; /* Soft Cream */
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--light);
+            color: var(--background);
+            margin: 0;
+        }
+
+        header {
+            background-color: var(--primary-dark);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        header img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--light);
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: var(--accent);
+        }
+
+        #services {
+            padding: 40px;
+            text-align: center;
+            background-color: var(--light);
+        }
+
+        .service-card {
+            background-color: #ffffff; /* White background for cards */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            transition: transform 0.3s;
+            display: inline-block;
+            width: calc(25% - 40px);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            color: var(--primary-dark); /* Deep Red for headings */
+        }
+
+        @media (max-width: 768px) {
+            .service-card {
+                width: calc(50% - 40px); /* Two columns on medium screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .service-card {
+                width: 100%; /* One column on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://img.freepik.com/premium-vector/innovation-technology-logo_27153-26.jpg" alt="Tech Innovators Logo" style="max-width: 150px; height: auto;">
+        <nav>
+            <ul>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="ourservice.html">Services</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>Explore our range of services designed to help your business succeed.</p>
+        
+        <div class="service-card">
+            <h3>Software Development</h3>
+            <p>Custom software solutions tailored to your business needs.</p>
+        </div>
+        
+        <div class="service-card">
+            <h3>IT Consulting</h3>
+            <p>Strategic advice to help you navigate the digital landscape.</p>
+        </div>
+        
+        <div class="service-card">
+            <h3>Cloud Services</h3>
+            <p>Scalable cloud solutions to enhance your business operations.</p>
+        </div>
+        
+        <div class="service-card">
+            <h3>Cybersecurity</h3>
+            <p>Protect your data and infrastructure with our comprehensive cybersecurity solutions.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tech Innovators Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>

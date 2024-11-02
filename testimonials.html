@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Testimonials - Tech Innovators Inc.</title>
+    <style>
+        /* Additional styling for testimonials page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--light); /* Light background color */
+            color: var(--background); /* Dark text color */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: var(--primary-dark); /* Header background color */
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            color: var(--light); /* Light text color for links */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #testimonials {
+            padding: 40px;
+            text-align: center;
+            background-color: var(--light); /* Match background color with services */
+        }
+        h2 {
+            color: var(--secondary); /* Accent color for headings */
+        }
+        .testimonial-card {
+            display: flex;
+            align-items: center; /* Center vertically */
+            background-color: #ffffff; /* White background for cards */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border: 2px solid var(--accent); /* Border color */
+        }
+        .testimonial-text {
+            flex: 1; /* Take available space */
+            text-align: left; /* Align text to the left */
+            margin-right: 20px; /* Space between text and image */
+        }
+        .testimonial-image {
+            flex: 0 0 150px; /* Fixed width for the image */
+        }
+        .testimonial-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .client-name {
+            font-weight: bold;
+            color: #008080; /* Teal color for client names */
+        }
+        @media (max-width: 768px) {
+            .testimonial-card {
+                flex-direction: column; /* Stack on smaller screens */
+                text-align: center; /* Center text on small screens */
+            }
+            .testimonial-text {
+                margin-right: 0; /* Remove right margin */
+                margin-bottom: 10px; /* Add bottom margin */
+            }
+            .testimonial-image {
+                margin: 0 auto; /* Center image */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://img.freepik.com/premium-vector/innovation-technology-logo_27153-26.jpg" alt="Tech Innovators Logo" style="max-width: 150px; height: auto;">
+        <nav>
+            <ul>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="ourservice.html">Services</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <p>We value our clients' feedback and strive to deliver the best service possible. Here’s what they have to say:</p>
+        
+        <div class="testimonial-card">
+            <div class="testimonial-text">
+                <p>"Tech Innovators transformed our operations with their innovative solutions. Highly recommended!"</p>
+                <p class="client-name">- Sarah Thompson, CEO of Business Solutions</p>
+            </div>
+            <div class="testimonial-image">
+                <img src="https://trustmary.com/_next/image?url=https%3A%2F%2Ftrustmary.se.seravo.com%2Fwp-content%2Fuploads%2F2024%2F07%2F3-in-one-survey-v2-1-1-1024x1024.png&w=3840&q=75" alt="Client Image">
+            </div>
+        </div>
+        
+        <div class="testimonial-card">
+            <div class="testimonial-text">
+                <p>"Their team was professional and responsive, helping us every step of the way. A great partner!"</p>
+                <p class="client-name">- David Lee, Director of Marketing at Creative Agency</p>
+            </div>
+            <div class="testimonial-image">
+                <img src="https://www.shutterstock.com/image-photo/portrait-young-investor-banker-workplace-260nw-2364566447.jpg" alt="Client Image">
+            </div>
+        </div>
+        
+        <div class="testimonial-card">
+            <div class="testimonial-text">
+                <p>"We saw a significant improvement in efficiency thanks to Tech Innovators. Truly impressive!"</p>
+                <p class="client-name">- Emily Johnson, Operations Manager at Retail Corp</p>
+            </div>
+            <div class="testimonial-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQdxZ0wxwh1UQowJYFuoug2O7P9qVgXDEGLA&s" alt="Emily Johnson">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tech Innovators Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>
